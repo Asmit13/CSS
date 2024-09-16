@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: darkolivegreen;
+        }
+        @media screen and (width: 300px) {
+            .box {
+                background-color: brown;
+            }
+        }
+        @media  screen and (min-width: 300px) {
+            .box {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        @media screen and (max-width: 250px){ 
+            .box {
+                height: 50px;
+                height: 50px;
+            }
+        }
+        /* Also we can combine the media properties together*/
+        @media screen and (min-width: 250px) and (max-width: 300px){ /* We Can OR instead of And */
+            .box {
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

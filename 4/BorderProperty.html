@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Property</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        .pad {
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #First {
+            border: 3px dotted red;
+            background-color: aquamarine;         
+        }
+        #Second {
+            border: 2px dashed red;
+            background-color: gold;
+        }
+        #button1 {
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+            background-color: aqua;
+            border-radius: 30px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="First" class="pad">First</div>
+    <div id="Second" class="pad">Second</div>
+
+    <!--Border Radius-->
+    <button id="button1">Click Me</button>
+</body>
+</html>

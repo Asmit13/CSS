@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box {
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: darkorange;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            transition: all 0.5s ease-in;
+        }
+        .box:hover {
+            transform: rotate(45deg); /*Can do in all three exixes i.e, x,y, z.*/
+        }
+        .box2 {
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: rgb(54, 174, 18);
+            position: relative;
+            top: 150px;
+            left: 150px;
+            transition: all 0.5s ease-in; 
+        }
+        .box2:hover {
+            transform: scale(2);
+        }
+        .box3 {
+            text-align: center;
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: wheat;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            transition: all 0.5s ease-in;
+        }
+        .box3:hover {
+            transform: translate(50px, 50px);
+        }
+        .box4 {
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: rgb(60, 144, 152);
+            position: relative;
+            top: 250px;
+            left: 250px;
+            transition: all 0.5s ease-in; 
+        }
+        .box4:hover {
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Rotate</div>
+    <div class="box2">Scale</div>
+    <div class="box3">Translate</div>
+    <div class="box4">Skew</div>
+</body>
+</html>
